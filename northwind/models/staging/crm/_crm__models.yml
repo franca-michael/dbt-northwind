@@ -1,0 +1,17 @@
+version: 2
+
+models:
+    - name: stg_costumer
+      description: "Client table"
+      columns:
+        - name: customer_id
+          description: "Unique id of customer"
+          tests:
+            - unique
+            - not_null
+        - name: company_name
+          description: "Name of company"
+          tests:
+            - not_null
+        
+      
