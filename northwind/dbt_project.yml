@@ -39,5 +39,5 @@ models:
     intermediate:
       +materialized: view
     mart:
-      schema: "gold"
+      +schema: "gold"
       +materialized: table
