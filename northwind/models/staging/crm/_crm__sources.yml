@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: db render postgres
+  - name: northwind_meq6
     database: northwind_meq6
     schema: public
     tables:
