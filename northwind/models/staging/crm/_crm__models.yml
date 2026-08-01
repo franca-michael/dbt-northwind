@@ -1,7 +1,7 @@
 version: 2
 
 models:
-    - name: stg_costumer
+    - name: stg_customer
       description: "Client table"
       columns:
         - name: customer_id
@@ -13,5 +13,15 @@ models:
           description: "Name of company"
           tests:
             - not_null
-        
-      
+    - name: stg_orders
+      description: "Order table"
+      columns:
+        - name: order_id
+          description: "Unique id of order"
+          tests:
+            - unique
+            - not_null 
+        - name: order_date
+          description: "Date of order"
+          tests:
+            - not_null
