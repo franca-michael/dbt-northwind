@@ -13,7 +13,7 @@ models:
           description: "Name of company"
           tests:
             - not_null
-    - name: int_orders
+    - name: stg_orders
       description: "Fact table of orders"
       columns:
       - name: order_id
